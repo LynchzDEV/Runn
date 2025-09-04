@@ -245,6 +245,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 *An AI-powered development experience that turns ideas into production-ready applications*
 
-[🚀 Deploy to Vercel](https://vercel.com/new) • [📱 View Demo](https://running-plan.vercel.app) • [🐙 GitHub](https://github.com/yourusername/running-plan)
+[🚀 Deploy to Vercel](https://vercel.com/new) • [📱 View App](https://running-plan.lynchz.dev/) • [🐙 GitHub](https://github.com/yourusername/running-plan)
 
 </div>

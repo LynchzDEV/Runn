@@ -1,0 +1,33 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="48" fill="#FEF9F3"/>
+  <circle cx="96" cy="96" r="70" fill="#FEF9F3" stroke="#DE9151" stroke-width="4"/>
+
+  <!-- Runner figure -->
+  <g transform="translate(96, 96)">
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="12" fill="#DE9151"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="5" rx="15" ry="25" fill="#DE9151"/>
+    <!-- Arms -->
+    <ellipse cx="-12" cy="-5" rx="5" ry="15" fill="#DE9151" transform="rotate(-30)"/>
+    <ellipse cx="12" cy="0" rx="5" ry="15" fill="#DE9151" transform="rotate(45)"/>
+    <!-- Legs -->
+    <ellipse cx="-8" cy="25" rx="6" ry="18" fill="#DE9151" transform="rotate(-20)"/>
+    <ellipse cx="8" cy="20" rx="6" ry="18" fill="#DE9151" transform="rotate(60)"/>
+  </g>
+
+  <!-- Motion lines -->
+  <g stroke="#DE9151" stroke-width="3" stroke-linecap="round">
+    <line x1="30" y1="80" x2="50" y2="80"/>
+    <line x1="32" y1="90" x2="55" y2="90"/>
+    <line x1="35" y1="100" x2="52" y2="100"/>
+  </g>
+
+  <!-- Calendar icon -->
+  <rect x="130" y="60" width="35" height="40" rx="4" fill="white" stroke="#DE9151" stroke-width="2"/>
+  <rect x="130" y="60" width="35" height="12" rx="4" fill="#DE9151"/>
+  <circle cx="140" cy="75" r="2" fill="#424242"/>
+  <circle cx="155" cy="75" r="2" fill="#424242"/>
+  <line x1="135" y1="85" x2="160" y2="85" stroke="#424242" stroke-width="1"/>
+  <line x1="135" y1="90" x2="155" y2="90" stroke="#424242" stroke-width="1"/>
+</svg>

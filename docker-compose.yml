@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  running-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # Multi-platform build support
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    # Health check to ensure the app is running
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    # Resource limits for production deployment
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    # Restart policy for production
+    restart: unless-stopped
+    
+  # Optional: Add a development service for local development
+  running-app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: development
+    ports:
+      - "3001:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+    profiles:
+      - development
+
+networks:
+  default:
+    driver: bridge

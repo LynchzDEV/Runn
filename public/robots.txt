@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://running-plan.app/sitemap.xml
+Sitemap: https://running-plan.lynchz.dev/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Running Plan App" }],
   creator: "Running Plan",
   publisher: "Running Plan",
-  metadataBase: new URL("https://running-plan.app"),
+  metadataBase: new URL("https://running-plan.lynchz.dev"),
   formatDetection: {
     email: false,
     address: false,
@@ -94,7 +94,7 @@ export default function RootLayout({
     name: "Running Plan - Weekly Training Tracker",
     description:
       "Track your weekly running training with a beautiful, mobile-friendly app. Monitor your streak, check-in with photos, and stay motivated with daily anime hugs.",
-    url: "https://running-plan.app",
+    url: "https://running-plan.lynchz.dev",
     applicationCategory: "HealthApplication",
     operatingSystem: "Web",
     offers: {
